@@ -6,12 +6,24 @@ export class Buyer {
   private phone: string = '';
   private email: string = '';
 
-  // Сохранение данных в модели
-  setBuyerData(data: IBuyer): void {
-    this.payment = data.payment;
-    this.address = data.address;
-    this.phone = data.phone;
-    this.email = data.email;
+  // Сохранение способа оплаты
+  setPayment(payment: TPayment): void {
+    this.payment = payment;
+  }
+
+  // Сохранение адреса
+  setAddress(address: string): void {
+    this.address = address;
+  }
+
+  // Сохранение телефона
+  setPhone(phone: string): void {
+    this.phone = phone;
+  }
+
+  // Сохранение email
+  setEmail(email: string): void {
+    this.email = email;
   }
 
   // Получение данных покупателя
