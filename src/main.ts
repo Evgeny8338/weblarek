@@ -40,12 +40,10 @@ basket.clear();
 console.log('Корзина после очистки:', basket.getItems());
 
 // Проверка работы методов покупателя
-buyer.setBuyerData({                                                           
-  payment: 'card',
-  address: 'Москва',
-  phone: '+79876543210',
-  email: 'vasya@mail.ru',
-});
+buyer.setPayment('card');
+buyer.setAddress('Москва');
+buyer.setPhone('+79876543210');
+buyer.setEmail('vasya@mail.ru');
 
 console.log('Данные покупателя:', buyer.getBuyerData());                       
 console.log('Данные покупателя валидны?', buyer.validate());                   
