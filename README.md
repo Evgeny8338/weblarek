@@ -189,9 +189,9 @@ type TPayment = 'card' | 'cash';
 
 
 ##### Cохранение данных в модели  по полям;
-`setPayment(payment: TPayment): void` - сохранение вида оплаты;
-`setAddress(address: string): void` - сохранение адреса доставки;
-`setPhone(phone: string): void` - сохранение телефона;
+`setPayment(payment: TPayment): void` - сохранение вида оплаты;  
+`setAddress(address: string): void` - сохранение адреса доставки;  
+`setPhone(phone: string): void` - сохранение телефона;  
 `setEmail(email: string): void` - сохранение емейла.
 
 `getBuyerData(): IBuyer;` - получение всех данных покупателя;
